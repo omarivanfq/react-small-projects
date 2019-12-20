@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+nav {
+  background-color: #375a7f;
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+
+nav h1 {
+  font-size: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+
+footer {
+  color: rgba(255,255,255,0.27);
+  letter-spacing: 5px;
+  background-color: #0f0e0e;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0;
+  transition: all 0.2s ease;
+  user-select: none;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+
+footer:hover {
+  color: rgba(255,255,255,0.37);
+}
+
+div.container {
+  margin-bottom:25px;
+/*  background-color: #cccccc; */
+}
+
+img.logo {
+  width: 40px;
+  margin: 0 15px;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+img.logo:hover {
+  opacity: 1;
+}
+
+.cat-card {
+  width: 100%;
+  height: 100%;
+  max-width:450px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+  overflow: hidden;
+  position: relative;
+  border-radius: 7px;
+}
+
+.cat-card img {
+  height: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.buttons {
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 999;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.buttons > * {
+  margin: 10px 20px;
+  background-color: #fff!important; /* ****** */
+}
+
+.cat-btn {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  margin: 15px auto;
+}
+
+.nav-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-btns button {
+  background-color: #bdadad;
+  padding: 15px 25px;
+}
+
+.nav-btns button.active {
+  background-color: #000000;
+  color: #ffffff;
+}
+.cats-grid {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.cat-grid--cat {
+  display: inline-block;
+  background-color: #ffffff;
+  height: 120px;
+  width: 120px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative!important;
+  box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.4);
+  transition: all 0.2s ease;
+}
+.cat-grid--cat.hovered {
+  box-shadow: 0px 0px 5px 2px rgba(214,13,13,1);
+}
+
+.cat-grid--cat .delete-fav {
+  position: absolute;
+  right:4px;
+  top:4px;
+  color: #ffffff;
+  background-color: rgba(230,14,23);
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  border: 1px solid rgba(0,0,0,0.27)
+}
+
+.cat-grid--cat .delete-fav::after {
+  content: "x";
+  position: absolute;
+  top: 0;
+  left: 7px;
+}
+
+.logo {
+  width: 85px;
+  display: inline-block;
+  margin-bottom: -7px;
+}
